@@ -1,0 +1,29 @@
+{
+  "name": "ytdl",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p $PORT",
+    "export": "next export",
+    "deploy": "npm run build; npm run export",
+    "postbuild": "next-on-netlify"
+  },
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "axios": "^0.19.2",
+    "content-disposition": "^0.5.3",
+    "downloadjs": "^1.4.7",
+    "fs": "0.0.1-security",
+    "netlify-lambda": "^2.0.1",
+    "next": "^9.4.4",
+    "next-aws-lambda": "^2.5.1-alpha.0",
+    "next-images": "^1.4.0",
+    "next-on-netlify": "^2.4.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "serverless": "^2.0.0",
+    "ytdl-core": "^3.2.2"
+  }
+}
